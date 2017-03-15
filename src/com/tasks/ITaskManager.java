@@ -2,7 +2,8 @@ package com.tasks;
 
 public interface ITaskManager {
 	
-	public void insertJobReoccurence(int id, int priority, int time);
-	public void getNextTask();
+	public boolean insertReoccurenceTask(int id, int priority, int time);
+	public boolean insertTask(int id, int priority);
+	public int getNextTask();
 	
 }
