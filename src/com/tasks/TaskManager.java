@@ -57,8 +57,8 @@ public class TaskManager implements ITaskManager {
 				tm.tmTemp = this;
 				Thread runAgain = new Thread(tm);
 				runAgain.start();
-				tasks.remove(tm);
-				tasksCount--;
+				 tasks.remove(tm);
+				 tasksCount--;
 			} else {
 				tasks.remove(tm);
 				tasksCount--;
@@ -68,9 +68,9 @@ public class TaskManager implements ITaskManager {
 		return -1;
 	}
 	
-	void listTasks() {
+	synchronized void listTasks() {
 		for(Task t:tasks) {
-			System.out.println(t.toString());
+			System.out.println(">> "+t.toString());
 		}
 	}
 	
