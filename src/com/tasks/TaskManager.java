@@ -3,25 +3,27 @@ package com.tasks;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.PriorityQueue;
+import java.util.Queue;
 import java.util.stream.Collectors;
 
 public class TaskManager implements ITaskManager {
 	
-	List<Task> tasks = new ArrayList<Task>();
-	int tasksCount;
+	Queue<Task> tasks;
 	int tasksMaxCount;
 	
 	public TaskManager(int tasksMaxCount) {
 		super();
 		this.tasksMaxCount = tasksMaxCount;
+		tasks = new PriorityQueue<>(tasksMaxCount, comparator);
 	}
 
 	@Override
 	synchronized public boolean insertReoccurenceTask(int id, int priority, int time) {
 		boolean result=false;
-		if (tasksCount<tasksMaxCount) {
+		if (tasks.size()<tasksMaxCount) {
 			result = true;
-			addTask(id, priority, time);
+			tasks.add(new Task(id, priority, time));
 		} else {
 			result = false;
 		}
@@ -34,7 +36,6 @@ public class TaskManager implements ITaskManager {
 		List<Task> detectTask=tasks.stream().filter(p -> p.id == id).collect(Collectors.toList());
 		if (detectTask.size() == 0 ) {
 			tasks.add(t);
-			tasksCount++;
 			System.out.println(String.format("Insert task #:%s, p:%s, t:%s", id, priority, time));
 		} else {
 			detectTask.get(0).setId(id);
@@ -52,18 +53,22 @@ public class TaskManager implements ITaskManager {
 	@Override
 	synchronized public int getNextTask() {
 		if (tasks.size()>0) {
-			Task tm = getTask();
-			if (tm.time>0) {
-				tm.tmTemp = this;
-				Thread runAgain = new Thread(tm);
+			Task t = tasks.peek();
+			int result = t.getId();
+			if (t.getTime()>0) {
+				t.tmTemp = this;
+				Thread runAgain = new Thread(t);
 				runAgain.start();
-				 tasks.remove(tm);
-				 tasksCount--;
+				System.out.println(String.format("Rerun task: #:%s, p:%s, t:%s",
+						t.getId(), t.getPriority(), t.getTime()));
+				
 			} else {
-				tasks.remove(tm);
-				tasksCount--;
+				System.out.println(String.format("Remove task: #:%s, p:%s, t:%s",
+						t.getId(), t.getPriority(), t.getTime()));
+				
 			}
-			return tm.id;
+			tasks.remove();
+			return result;
 		}
 		return -1;
 	}
@@ -74,28 +79,18 @@ public class TaskManager implements ITaskManager {
 		}
 	}
 	
-	Task getTask() {
-		Task resultTask=null;
-		List<Task> filterPriority=tasks.stream().filter(p -> p.priority==1).collect(Collectors.toList());
-		Comparator<Task> comp = (p1, p2) -> Integer.compare( p1.time, p2.time);
-		if (filterPriority.size()!=0) {
-		    Task max = filterPriority.stream().min(comp).get();
-		    resultTask = max;
-			return resultTask;
-		}
-		filterPriority=tasks.stream().filter(p -> p.priority==2).collect(Collectors.toList());
-		if (filterPriority.size()!=0) {
-		    Task max = filterPriority.stream().min(comp).get();
-		    resultTask = max;
-			return resultTask;
-		}
-		filterPriority=tasks.stream().filter(p -> p.priority==3).collect(Collectors.toList());
-		if (filterPriority.size()!=0) {
-		    Task max = filterPriority.stream().min(comp).get();
-		    resultTask = max;
-			return resultTask;
-		}
-		return resultTask;
-	}
+	//Comparator anonymous class implementation
+	public static Comparator<Task> comparator = new Comparator<Task>() {
+		
+		@Override
+		public int compare(Task t1, Task t2) {
+			int compareResult;
+			compareResult = t1.getPriority() - t2.getPriority();
+			if ((t1.getTime()>0)&&(t2.getTime()>0&&t1.getPriority()==t2.getPriority())) {
+				compareResult = t1.getTime()-t2.time;
+			}
+            return compareResult;
+        }
+	};
 
 }
