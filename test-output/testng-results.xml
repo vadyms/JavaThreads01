@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="11" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2081" started-at="2017-03-20T12:35:33Z" finished-at="2017-03-20T12:35:35Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2081" started-at="2017-03-20T12:35:33Z" finished-at="2017-03-20T12:35:35Z">
+      <class name="com.tests.NewTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="10" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testEmptyTaskManager()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="testEmptyTaskManager" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyTaskManager -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testInsertSameTask()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="testInsertSameTask" duration-ms="10" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInsertSameTask -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testTaskManagerAddReoccurenceTaskPriority1()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="testTaskManagerAddReoccurenceTaskPriority1" duration-ms="10" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTaskManagerAddReoccurenceTaskPriority1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testOneElementTaskManager()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="testOneElementTaskManager" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOneElementTaskManager -->
+        <test-method status="PASS" signature="testTaskGetters()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="testTaskGetters" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTaskGetters -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testTaskManagerAddReoccurenceTaskPriority2()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="testTaskManagerAddReoccurenceTaskPriority2" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTaskManagerAddReoccurenceTaskPriority2 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testTaskManagerAddReoccurenceTaskPriority3()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="testTaskManagerAddReoccurenceTaskPriority3" duration-ms="10" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTaskManagerAddReoccurenceTaskPriority3 -->
+        <test-method status="PASS" signature="testTaskRun()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="testTaskRun" duration-ms="1005" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTaskRun -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:33Z" finished-at="2017-03-20T14:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testTaskRunNoTaskManager()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="testTaskRunNoTaskManager" duration-ms="1006" started-at="2017-03-20T14:35:34Z" finished-at="2017-03-20T14:35:35Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.tasks.Task.run(Task.java:34)
+	at com.tests.NewTest.testTaskRunNoTaskManager(NewTest.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTaskRunNoTaskManager -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:34Z" finished-at="2017-03-20T14:35:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:34Z" finished-at="2017-03-20T14:35:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testTaskSetters()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="testTaskSetters" duration-ms="0" started-at="2017-03-20T14:35:35Z" finished-at="2017-03-20T14:35:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTaskSetters -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:35Z" finished-at="2017-03-20T14:35:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:35Z" finished-at="2017-03-20T14:35:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testTaskToString()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="testTaskToString" duration-ms="0" started-at="2017-03-20T14:35:35Z" finished-at="2017-03-20T14:35:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTaskToString -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:35Z" finished-at="2017-03-20T14:35:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:35Z" finished-at="2017-03-20T14:35:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.tests.NewTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-03-20T14:35:35Z" finished-at="2017-03-20T14:35:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.tests.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
